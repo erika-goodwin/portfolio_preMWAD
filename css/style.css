@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* -0px-480px-768px-1024-1200- */
+
+.\? {
+  box-shadow: inset 4px 4px rgb(236, 15, 170), inset -4px -4px rgb(236, 15, 170);
+}
+
+/* ------------------------------------*/
+/* BASIC SETUP */
+/* ------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+html,
+  /*For responsible website */
+  body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #2e2e2e;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+h5 {
+  font-size: 36px;
+}
+
+h6 {
+  font-size: 34px;
+}
+
+/* ------------------------------------*/
+/* RESUABLE COMPONENTS */
+/* ------------------------------------*/
+
+.row {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  padding: 60px 0 0 0;
+}
+
+.box {
+  /*padding: 1%;*/
+}
+/* ----- HEADINGS ----- */
+/* ----- PARAGRAPHS ----- */
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 7px;
+  color: #2e2e2e;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #d9c9b4;
+  border: 1px solid #d9c9b4;
+  margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active {
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+
+/* ------------------------------------*/
+/*  HEARDER */
+/* ------------------------------------*/
+
+/* -- NAV --*/
+.topnav {
+  width: 100%;
+  display: flex;
+  background-color: #d9c9b4;
+
+  position: fixed;
+}
+.topnav-name {
+  padding-left: 3%;
+}
+.topnav-list {
+  text-align: center;
+}
+.topnav-list ul li {
+  display: inline;
+  padding-left: 10%;
+}
+.topnav-cv {
+  text-align: right;
+  padding-right: 3%;
+}
+
+/* -- NAME --*/
+.section-landing {
+  background-color: #d9c9b4;
+  height: 95vh;
+
+  /*position: relative;*/
+}
+.landing-name {
+  text-align: center;
+  padding: 4%;
+  margin-top: 3%;
+}
+.inline {
+  display: inline;
+}
+.landing-jobtitle {
+  text-align: center;
+}
+
+/* -- DETAIL --*/
+
+.landing-detail {
+  background-color: #2e2e2e;
+  color: #e6e6e6;
+  width: 80%;
+  margin: auto;
+  padding: 3%;
+  margin-top: 3%;
+}
+.landing-detail img {
+  width: 291px;
+}
+.detail-upper {
+  display: flex;
+  justify-content: space-around;
+}
+.detail-sentence ul li {
+  padding-top: 3%;
+}
+.detail-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+/* -- STICKY SOSIAL --*/
+.sticky-social {
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+.social1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.social1 ion-icon {
+  font-size: 48px;
+  color: #2e2e2e;
+}
+
+/* ------------------------------------*/
+/*  ABOUT */
+/* ------------------------------------*/
+
+.section-about {
+  background-color: #2e2e2e;
+  height: 90vh;
+
+  position: relative;
+}
+.about-title {
+  color: #e0e0e0;
+  transform: rotate(-90deg);
+  text-align: right;
+
+  position: absolute;
+  left: -10%;
+  top: 35%;
+}
+.about-belt {
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  margin-bottom: 3%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.about-detailbox {
+  background-color: #d9c9b4;
+  width: 73%;
+  margin-top: 7%;
+  margin-left: 14%;
+  padding: 3% 3% 3% 3%;
+
+  position: relative;
+}
+.about-p {
+  margin-left: 20%;
+  line-height: 1.5em;
+}
+.about-li {
+  margin-left: 20%;
+}
+
+.social2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.social2 ion-icon {
+  font-size: 48px;
+  color: #e0e0e0;
+}
+
+/* ------------------------------------*/
+/*  ABOUT */
+/* ------------------------------------*/
+
+.section-portfolio {
+  background-color: #e0e0e0;
+  height: 90vh;
+
+  position: relative;
+}
+
+.portfolio-title {
+  color: #2e2e2e;
+  transform: rotate(-90deg);
+  text-align: right;
+
+  position: absolute;
+  left: -10%;
+  top: 35%;
+}
+.portfolio-detailbox {
+  background-color: #2e2e2e;
+  width: 73%;
+  margin-top: 7%;
+  margin-left: 14%;
+  padding: 3% 3% 3% 3%;
+
+  position: relative;
+
+  color: #e6e6e6;
+}
+.social3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.social3 ion-icon {
+  font-size: 48px;
+  color: #2e2e2e;
+}
