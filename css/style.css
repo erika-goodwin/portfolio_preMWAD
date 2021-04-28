@@ -13,14 +13,34 @@
   padding: 0;
   /*box-sizing: border-box;*/
 }
+/* -- color -- */
+:root {
+  --beige: #d9c9b4;
+  --black: #2e2e2e;
+  --gray: #e0e0e0;
+}
 
+.bg-beige {
+  background-color: var(--beige);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+
+/* -- font -- */
 html,
   /*For responsible website */
-  body {
+body {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
   font-size: 24px;
   color: #2e2e2e;
+}
+body {
+  height: 100vh;
 }
 h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -43,8 +63,21 @@ h6 {
   font-size: 34px;
 }
 
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* --Basic-- */
+
+.inline {
+  display: inline;
+}
+
 /* ------------------------------------*/
-/* RESUABLE COMPONENTS */
+/* REUSABLE COMPONENTS */
 /* ------------------------------------*/
 
 .row {
@@ -52,22 +85,9 @@ h6 {
   margin: auto;
 }
 
-section {
-  padding: 60px 0 0 0;
-}
-
-.box {
-  /*padding: 1%;*/
-}
 /* ----- HEADINGS ----- */
 /* ----- PARAGRAPHS ----- */
 
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited {
@@ -81,8 +101,8 @@ li {
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: #d9c9b4;
-  border: 1px solid #d9c9b4;
+  background-color: var(--beige);
+  border: 1px solid var(--beige);
   margin-right: 15px;
 }
 
@@ -91,52 +111,70 @@ li {
 }
 .btn-full:hover,
 .btn-full:active {
-  background-color: #e0e0e0;
-  border: 1px solid #e0e0e0;
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
 }
 
 /* ------------------------------------*/
-/*  HEARDER */
+/*  LANDING PAGE */
 /* ------------------------------------*/
+/* -- nav color -- */
+.topnav-indexcolor,
+.topnav-indexcolor a,
+.topnav-portfoliocolor,
+.topnav-portfoliocolor a,
+.topnav-contactcolor,
+.topnav-contactcolor a {
+  color: var(--black);
+}
+.topnav-aboutcolor,
+.topnav-aboutcolor a {
+  color: var(--gray);
+}
 
 /* -- NAV --*/
 .topnav {
   width: 100%;
   display: flex;
-  background-color: #d9c9b4;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
 
   position: fixed;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.topnav-name {
-  padding-left: 3%;
-}
+
 .topnav-list {
   text-align: center;
+  /* display: inline; */
+}
+.topnav-name {
+  padding-left: 1rem;
 }
 .topnav-list ul li {
   display: inline;
-  padding-left: 10%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .topnav-cv {
   text-align: right;
-  padding-right: 3%;
+  padding-right: 1rem;
 }
 
 /* -- NAME --*/
 .section-landing {
-  background-color: #d9c9b4;
-  height: 95vh;
+  height: 100vh;
 
   /*position: relative;*/
 }
 .landing-name {
   text-align: center;
-  padding: 4%;
-  margin-top: 3%;
+  padding: 3rem;
+  /* margin-top: 3%; */
 }
-.inline {
-  display: inline;
-}
+
 .landing-jobtitle {
   text-align: center;
 }
@@ -144,8 +182,7 @@ li {
 /* -- DETAIL --*/
 
 .landing-detail {
-  background-color: #2e2e2e;
-  color: #e6e6e6;
+  color: var(--gray);
   width: 80%;
   margin: auto;
   padding: 3%;
@@ -167,10 +204,9 @@ li {
   margin-top: 2%;
 }
 
-/* -- STICKY SOSIAL --*/
+/* -- STICKY SOCIAL --*/
 .sticky-social {
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 1%;
 }
 
 .social1 {
@@ -180,7 +216,7 @@ li {
 }
 .social1 ion-icon {
   font-size: 48px;
-  color: #2e2e2e;
+  color: var(--black);
 }
 
 /* ------------------------------------*/
@@ -188,8 +224,7 @@ li {
 /* ------------------------------------*/
 
 .section-about {
-  background-color: #2e2e2e;
-  height: 90vh;
+  height: 100vh;
 
   position: relative;
 }
@@ -203,15 +238,14 @@ li {
   top: 35%;
 }
 .about-belt {
-  background-color: #2e2e2e;
-  color: #e0e0e0;
+  background-color: var(--black);
+  color: var(--gray);
   margin-bottom: 3%;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 .about-detailbox {
-  background-color: #d9c9b4;
   width: 73%;
   margin-top: 7%;
   margin-left: 14%;
@@ -268,6 +302,9 @@ li {
 
   color: #e6e6e6;
 }
+.box-gal {
+}
+
 .social3 {
   position: absolute;
   right: 0;
