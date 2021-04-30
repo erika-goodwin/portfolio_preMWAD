@@ -7,48 +7,58 @@
     <meta name="description" content="…" />
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+
+    <!-- swup -->
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
+    <!-- css,js -->
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--not yet-->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- animation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
 
     <title>ERIKA Hashizume</title>
   </head>
+
   <body class="bg-beige">
-    <nav class="topnav topnav-indexcolor ?">
-      <div class="topnav-name ?">
+    <nav class="topnav topnav-indexcolor bg-beige">
+      <div class="topnav-name">
         <p>
-          <b><a href="index.html">ERIKA Hashizume</a></b>
+          <b><a href="/index.html">ERIKA Hashizume</a></b>
         </p>
       </div>
-      <div class="topnav-list ?">
+      <div class="topnav-list">
         <ul>
-          <li class="?"><a href="about.html">About</a></li>
-          <li class="?"><a href="portfolio.html">Portfolio</a></li>
-          <li class="?"><a href="Contact.html">Contact</a></li>
+          <li class=""><a href="/about.html">About</a></li>
+          <li class=""><a href="/portfolio.html">Portfolio</a></li>
+          <li class=""><a href="/Contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="topnav-cv ?">
+      <div class="topnav-cv">
         <p>
-          <b><a href="cv.html">CV</a></b>
+          <b><a href="/cv.html">CV</a></b>
         </p>
       </div>
     </nav>
 
-    <section class="section-landing" id="sec1">
-      <div class="landing-name ?">
+    <section class="section-landing">
+      <div class="landing-name">
         <h1 class="inline">ERIKA</h1>
         <h3 class="inline">Hashizume</h3>
       </div>
-      <div class="landing-jobtitle ?">
+      <div class="landing-jobtitle">
         <h4>Sofware / Mechanical</h4>
         <h5>ENGINEER</h5>
       </div>
-      <div class="landing-detail bg-black ?">
+      <div class="landing-detail bg-black animation-delay">
         <div class="detail-upper">
-          <div class="detail-sentence ?">
+          <div class="detail-sentence">
             <h5>Full-stack Developer</h5>
             <ul>
               <li>
@@ -60,18 +70,25 @@
           </div>
           <div class="detail-photo">
             <img
+              id="img-erika"
+              onmouseover="setNewImg()"
+              onmouseout="setOldImg()"
               src="css/img_css/img-ErikaHashizume.JPG"
               alt="img-ErikaHashizume"
             />
           </div>
         </div>
-        <div class="detail-btn ?">
+        <div class="detail-btn">
           <a class="btn btn-full" href="about.html"><h5>About</h5></a>
           <a class="btn btn-full" href="portfolio.html"><h5>Portfolio</h5></a>
           <a class="btn btn-full" href="#"><h5>CV</h5></a>
         </div>
       </div>
-      <div class="sticky-social social1 ?">
+      <div id="notification">
+        <p><strong>Hello!</strong></p>
+        <p>I am available to work immediately.</p>
+      </div>
+      <div class="sticky-social social-black">
         <ul>
           <li>
             <a href="https://github.com/erika-goodwin"
@@ -79,7 +96,7 @@
             ></a>
           </li>
           <li>
-            <a href="http://api.whatsapp.com/send?phone=16043536897"
+            <a href="http://api.whatsapp.com/sendphone=16043536897"
               ><ion-icon name="logo-whatsapp"></ion-icon
             ></a>
           </li>
@@ -96,5 +113,6 @@
         </ul>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

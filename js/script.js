@@ -1,17 +1,46 @@
 "use strict";
 
+function setNewImg() {
+  document.getElementById("img-erika").src =
+    "css/img_css/img-ErikaHashizume-color.jpg";
+}
+function setOldImg() {
+  document.getElementById("img-erika").src =
+    "css/img_css/img-ErikaHashizume.JPG";
+}
+
 $(function () {
-  $(window).scroll(function () {
-    //セクション２から３の間はこれ
-    if (
-      $(window).scrollTop() > $("#sec2").offset().top &&
-      $(window).scrollTop() < $("#sec3").offset().top
-    ) {
-      $("topnav").css("background-color", "#2e2e2e");
-    } //セクション３より進んだらこれ
-    else if ($(window).scrollTop() > $("#sec3").offset().top) {
-      $("nav ul li").css("color", "#ff0000");
-    } //それ以外（つまりセクション１である場合）はこれ
-    else $("nav ul li").css("color", "#000");
-  });
+  $(".animation-delay").css({ opacity: "0" });
+  setTimeout(function () {
+    $(".animation-delay").stop().animate({ opacity: "1" }, 1000);
+  }, 500);
 });
+
+// // swup
+// const swup = new Swup();
+
+// //When you reach waypoint 3
+// $(".js--wp-1").waypoint(
+//   (direction) => {
+//     // add the class animated__animated and animate__fadeIn to waypoint 3
+//     $(".js--wp-1).addClass("animate__animated animate__fadeIn");
+//   },
+//   {
+//     offset: "50%",
+//   }
+// );
+//     //When you reach THE HEADER
+//     $('.js--header').waypoint(
+//       (direction) => {
+//         if (direction === 'up') {
+//   // remove the animation classes from all waypoints (1 - 4)
+//           $('.js--wp-1').removeClass('animate__animated animate__fadeIn');
+//           $('.js--wp-2').removeClass('animate__animated animate__fadeInLeft');
+//           $('.js--wp-3').removeClass('animate__animated animate__fadeIn');
+//           $('.js--wp-4').removeClass('animate__animated animate__bounceIn');
+//         }
+//       },
+//       {
+//         offset: '-25%',
+//       }
+//     );

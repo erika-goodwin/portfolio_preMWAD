@@ -7,38 +7,99 @@
     <meta name="description" content="…" />
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+  
+    <!-- swup -->
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>   -->
+    <!-- css,js -->
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <!--not yet-->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- animation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>ERIKA Hashizume - contact</title>
   </head>
   <body class="bg-beige">
-    <nav class="topnav topnav-indexcolor ?">
-      <div class="topnav-name ?">
+    <nav class="topnav topnav-indexcolor bg-beige ">
+      <div class="topnav-name ">
         <p>
-          <b><a href="index.html">ERIKA Hashizume</a></b>
+          <b><a href="/index.html">ERIKA Hashizume</a></b>
         </p>
       </div>
-      <div class="topnav-list ?">
+      <div class="topnav-list ">
         <ul>
-          <li class="?"><a href="about.html">About</a></li>
-          <li class="?"><a href="portfolio.html">Portfolio</a></li>
-          <li class="?"><a href="Contact.html">Contact</a></li>
+          <li class=""><a href="/about.html">About</a></li>
+          <li class=""><a href="/portfolio.html">Portfolio</a></li>
+          <li class=""><a href="/Contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="topnav-cv ?">
+      <div class="topnav-cv ">
         <p>
-          <b><a href="cv.html">CV</a></b>
+          <b><a href="/cv.html">CV</a></b>
         </p>
       </div>
     </nav>
 
-    <section class="section-landing" id="sec1">
-      <div class="sticky-social social1">
+    <section class="section-contact">
+        <div class="contact-title ">
+            <h2>Contact</h2>
+          </div>
+      <div class="contact-info bg-black">
+        <ul>
+          <li><b>Email:</b>erika.m.hashizume@gmail.com</li>
+          <br />
+          <li>
+            <b>Github:</b>
+            <a href="https://github.com/erika-goodwin"
+              >github.com/erika-goodwin</a
+            >
+          </li>
+          <li>
+            <b>Linkdin:</b>
+            <a href="http://linkedin.com/in/erika-hashizume"
+              >linkedin.com/in/erika-hashizume</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact-email bg-black">
+        <h5>Send me an email:</h3><br>
+        <form
+          action="erika.m.hashizume@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+          name="EmailForm"
+        >
+          Name:
+          <input
+            type="text"
+            size="19"
+            name="Contact-Name"
+            class="form-box"
+          /><br /><br />
+          Email:
+          <input
+            type="email"
+            name="Contact-Email"
+            class="form-box"
+          /><br /><br />
+          Message: <br />
+          <textarea name="Contact-Message" rows="6" cols=" 20" class="form-box form-message">
+          </textarea
+          ><br /><br />
+          <button type="submit" value="Submit" class="bg-gray"><b>SEND</b></button>
+        </form>
+      </div>
+
+      <div class="sticky-social social-black">
         <ul>
           <li>
             <a href="https://github.com/erika-goodwin"
@@ -46,7 +107,7 @@
             ></a>
           </li>
           <li>
-            <a href="http://api.whatsapp.com/send?phone=16043536897"
+            <a href="http://api.whatsapp.com/sendphone=16043536897"
               ><ion-icon name="logo-whatsapp"></ion-icon
             ></a>
           </li>
