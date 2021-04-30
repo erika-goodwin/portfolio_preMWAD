@@ -1,6 +1,6 @@
 # portfolio_preMWAD
 
-# The final assignment of Pre MWAD class: Portfolio
+The final assignment of Pre MWAD class: Portfolio
 
 ### 1 Concept :
 
